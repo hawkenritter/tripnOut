@@ -13,7 +13,6 @@ class TripsController < ApplicationController
   end
 
   def destroy
-
     @trip = Trip.where(id: params[:id]).first
 
     if @trip.destroy
